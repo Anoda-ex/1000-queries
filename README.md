@@ -1,6 +1,8 @@
 To start porject clone and execute on command line "docker-compose up"
-Front available on "http://localhost:3001/"
-Back available on "http://localhost:4000/"
+
+Front - http://localhost:3001/
+
+Back - http://localhost:4000/
 
 Taks: 
 Implement client-server data fetch logic by following the next steps:
