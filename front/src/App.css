@@ -1,0 +1,124 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 4px;
+    border: 2px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #777;  /* Цвет бегунка при наведении */
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+*{
+    box-sizing: border-box;
+}
+body, html, .root{
+    height: 100%
+}
+:root{
+    --background: black;
+    --primary: white;
+    --border: rgba(255, 255, 255, 0.23);
+    --error: #d93e3e;
+}
+.main{
+    height: 100vh;
+    background: var(--background);
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+.container{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input__block{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.input__wrapper{
+    display: flex;
+    align-items: center;
+}
+.input__text:after{
+    content: "";
+}
+.input{
+    height: 50px;
+    width: 200px;
+    font-size: 36px;
+    padding: 10px 15px;
+    background: var(--background);
+    color: var(--primary);
+    border-color: var(--border);
+    margin-left: 20px;
+    outline: none;
+}
+.button{
+    height: 50px;
+    width: 100px;
+    font-size: 26px;
+    border-color: var(--border);
+    border-left: 0;
+    background: var(--background);
+    color: var(--primary);
+    cursor: pointer;
+}
+.button:disabled{
+    opacity: 0.7;
+    pointer-events: none;
+}
+.error{
+    font-size: 20px;
+    color: var(--error);
+}
+.list{
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+    overflow: auto;
+    gap: 20px;
+    padding: 10px;
+}
+.list li{
+    text-align: center;
+}
+.list .list__item-error{
+    color: var(--error)
+}
+@media(  max-width: 768px ){
+    .input__block{
+        flex-direction: column;
+    }
+    .input__wrapper{
+        margin-top: 15px;
+    }
+    .list {
+
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+    }
+}
