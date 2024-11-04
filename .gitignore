@@ -9,9 +9,7 @@ build/
 # Environment variables
 .env
 
-# Docker files
-Dockerfile
-docker-compose.yml
+
 
 # Logs
 *.log

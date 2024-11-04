@@ -1,0 +1,18 @@
+version: '3'
+services:
+  server:
+    build: ./back
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=development
+
+  client:
+    build:
+      context: ./front
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=development
+    command: npx serve -s build -l 3000
