@@ -1,0 +1,26 @@
+
+# Build directories
+dist/
+build/
+
+# IDE configurations
+.idea/
+
+# Environment variables
+.env
+
+# Docker files
+Dockerfile
+docker-compose.yml
+
+# Logs
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+/*/node_modules/
