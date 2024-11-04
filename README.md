@@ -1,3 +1,8 @@
+To start porject clone and execute on command line "docker-compose up"
+Front available on "http://localhost:3001/"
+Back available on "http://localhost:4000/"
+
+Taks: 
 Implement client-server data fetch logic by following the next steps:
 
 1. Display an input (required, type number, from 0 to 100) and the "Start" button. Clicking the "Start" button you will disable it and start sending 1000 asynchronous HTTP requests to a server's "/api" endpoint in the following way:
